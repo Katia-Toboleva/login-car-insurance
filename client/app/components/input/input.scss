@@ -1,0 +1,80 @@
+@import 'colors.scss';
+
+.input {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  ::placeholder {
+    text-transform: capitalize;
+    font-size: 18px;
+  }
+
+  &__header {
+    display: block;
+    position: absolute;
+    color: $color-grey;
+    font-size: 24px;
+    top: 5px;
+    z-index: -1;
+    transition:
+      font-size 300ms ease,
+      margin-top 300ms ease;
+  }
+
+  &__body {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    background-color: transparent;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__underline {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-light-grey;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 100;
+      width: 0%;
+      height: 100%;
+      left: 50%;
+      background-color: $color-red;
+      transform: translateX(-50%);
+      transition: width 500ms ease;
+    }
+  }
+
+  &--focused {
+    ::placeholder {
+      color: $color-light-grey;
+    }
+
+    .input__header {
+      font-size: 16px;
+      margin-top: -20px;
+      color: $color-red;
+      z-index: 100;
+    }
+
+    .input__body {
+      color: $color-grey;
+    }
+
+    .input__underline {
+      &::before {
+        transform: translateX(-50%);
+        width: 100%;
+      }
+    }
+  }
+}
