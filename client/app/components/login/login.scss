@@ -1,0 +1,45 @@
+.login {
+  background-color: rgba(255, 255, 255, 0.87);
+  padding: 40px 50px;
+  width: 450px;
+  margin-top: 120px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-image: url('../images/img/emptyroad.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__body {
+    margin-bottom: 30px;
+
+    > :not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__password {
+    position: relative;
+
+    &__icon {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+  }
+}
