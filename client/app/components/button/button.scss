@@ -1,0 +1,20 @@
+@import 'colors.scss';
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 40px;
+
+  &--type-submit {
+    background-color: $color-red;
+    color: $color-white;
+  }
+
+  &--hovered {
+    background-color: $color-dark-red;
+  }
+
+  &--disabled {
+    background-color: $color-light-grey;
+  }
+}
