@@ -1,0 +1,51 @@
+@import 'colors.scss';
+
+.icon {
+  i {
+    position: relative;
+    display: block;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--color-grey {
+    svg {
+      fill: $color-grey;
+    }
+  }
+
+  &--color-red {
+    svg {
+      fill: $color-red;
+    }
+  }
+
+  &--size-small {
+    i {
+      width: 10px;
+    }
+
+    svg {
+      width: 10px;
+    }
+  }
+
+  &--size-medium {
+    i {
+      width: 30px;
+    }
+
+    svg {
+      width: 30px;
+    }
+  }
+
+  &--clickable {
+    cursor: pointer;
+  }
+}
