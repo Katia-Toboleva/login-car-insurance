@@ -14,7 +14,7 @@ const PolicyContainer = ({ state, actions }) => {
   return (
     <>
       {fetchDataRequestStatus === "rejected" && <div>Error!</div> }
-      {fetchDataRequestStatus === "pending" && <Spinner />}
+      {fetchDataRequestStatus === "pending" && <Spinner absolute />}
       {fetchDataRequestStatus === "success" && (
         <Policy
           policyDetails={policyDetails}

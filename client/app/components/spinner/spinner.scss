@@ -18,6 +18,13 @@
     animation: spinner 2000ms infinite;
   }
 
+  &--absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   @keyframes spinner {
     0% {
       width: 0%;
