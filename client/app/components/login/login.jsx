@@ -26,11 +26,15 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
     setInputType(!typePassword);
   };
 
-  const handleLoginButtonClick = () => {
-    onLoginSubmit({
-      username,
-      password,
-    });
+  const handleLoginSubmit = () => {
+    if(username && password) {
+      onLoginSubmit({
+        username,
+        password,
+      });
+    }
+
+    return null;
   };
 
   return (
@@ -50,12 +54,14 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
             type="text"
             placeholder="user name"
             onChange={handleUsernameChange}
+            onKeyUp={handleLoginSubmit}
           />
           <div className={styles['login__password']}>
             <Input
               type={typePassword ? "password" : "text"}
               placeholder="password"
               onChange={handlePasswordChange}
+              onKeyUp={handleLoginSubmit}
             />
             <div className={styles['login__password__icon']}>
               <Icon
@@ -68,13 +74,14 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
           </div>
         </div>
         {loginStatus === "pending" && <Spinner />}
-        {loginStatus === "rejected" && <div>Error!</div>}
+        {loginStatus === "rejected" && <div>Oops! Wrong Username or Password</div>}
         <div className={styles['login__controls']}>
           <Button
             type="login"
             text="sign in"
             size="medium"
-            onClick={username && password ? handleLoginButtonClick : null}
+            active={username && password}
+            onClick={handleLoginSubmit}
           />
         </div>
       </div>

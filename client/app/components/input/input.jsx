@@ -6,7 +6,7 @@ import styles from './input.scss';
 
 const cx = classnames.bind(styles);
 
-const Input = ({ placeholder, type, onChange }) => {
+const Input = ({ placeholder, type, onChange, onKeyUp }) => {
   const [state, setState] = useState({ focused: false, value: '' });
 
   const handleChange = (event) => {
@@ -18,6 +18,14 @@ const Input = ({ placeholder, type, onChange }) => {
     });
 
     onChange(value);
+  };
+
+  const handleInputKeyUp = (event) => {
+    if (event.keyCode === 13) {
+      onKeyUp();
+    }
+
+    return null;
   };
 
   const handleInputFocus = () => {
@@ -51,6 +59,7 @@ const Input = ({ placeholder, type, onChange }) => {
         type={type}
         value={state.value}
         placeholder={placeholder}
+        onKeyUp={handleInputKeyUp}
         onChange={handleChange}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
@@ -63,6 +72,7 @@ const Input = ({ placeholder, type, onChange }) => {
 
 Input.defaultProps = {
   onChange: () => {},
+  onKeyUp: () => {},
   value: '',
   placeholder: 'text'
 };
