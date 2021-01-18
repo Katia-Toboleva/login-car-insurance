@@ -11,6 +11,7 @@ const Button = (props) => {
     text,
     size,
     type,
+    active,
     onClick,
   } = props;
 
@@ -31,7 +32,7 @@ const Button = (props) => {
       className={cx('button', {
         [`button--type-${type}`]: type,
         'button--hovered': isHovered,
-        'button--disabled': !onClick,
+        'button--disabled': !active,
       })}
       onClick={handleButtonClick}
       onMouseEnter={handleMouseEnter}
