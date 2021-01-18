@@ -26,7 +26,7 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
     setInputType(!typePassword);
   };
 
-  const handleSubmitButtonClick = () => {
+  const handleLoginButtonClick = () => {
     onLoginSubmit({
       username,
       password,
@@ -71,10 +71,10 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
         {loginStatus === "rejected" && <div>Error!</div>}
         <div className={styles['login__controls']}>
           <Button
-            type="submit"
+            type="login"
             text="sign in"
             size="medium"
-            onClick={username && password ? handleSubmitButtonClick : null}
+            onClick={username && password ? handleLoginButtonClick : null}
           />
         </div>
       </div>
