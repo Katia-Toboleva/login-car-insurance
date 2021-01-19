@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import classnames from 'classnames/bind';
 import PropTypes from 'prop-types';
+import classnames from 'classnames/bind';
 import { Text } from '@components';
 import styles from './input.scss';
 
@@ -71,16 +71,17 @@ const Input = ({ placeholder, type, onChange, onKeyUp }) => {
 };
 
 Input.defaultProps = {
-  onChange: () => {},
-  onKeyUp: () => {},
   value: '',
-  placeholder: 'text'
+  placeholder: 'text',
+  onChange: () => { },
+  onKeyUp: () => { },
 };
 
 Input.propTypes = {
   placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
+  onKeyUp: PropTypes.func,
 };
 
 export default Input;
