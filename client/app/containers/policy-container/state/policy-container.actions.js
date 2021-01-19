@@ -1,25 +1,24 @@
 import CONSTANTS from './policy-container.constants';
 import * as api from './policy-container.api';
 
-const fetchPolicyPending = () => ({
+export const fetchPolicyPending = () => ({
   type: CONSTANTS.FETCH_POLICY_PENDING,
 });
 
-const fetchPolicySuccess = (data) => {
+export const fetchPolicySuccess = (data) => {
   return {
-  type: CONSTANTS.FETCH_POLICY_SUCCESS,
-  payload: {
-    data,
-  },
-}};
+    type: CONSTANTS.FETCH_POLICY_SUCCESS,
+    payload: {
+      data,
+    },
+  };
+};
 
-const fetchPolicyRejected = err => ({
+export const fetchPolicyRejected = () => ({
   type: CONSTANTS.FETCH_POLICY_REJECTED,
-  payload: err,
 });
 
 export const fetchPolicy = () => (dispatch) => {
-
   const success = data => {
     dispatch(fetchPolicySuccess(data));
   };
@@ -30,7 +29,7 @@ export const fetchPolicy = () => (dispatch) => {
 
   dispatch(fetchPolicyPending());
 
-  api.fetchPolicy()
+  return api.fetchPolicyApi()
     .then(response => response.json())
     .then(success)
     .catch(rejected);
