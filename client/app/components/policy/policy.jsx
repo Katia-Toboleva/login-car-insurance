@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Text } from '@components';
 import styles from './policy.scss';
 
@@ -31,6 +32,24 @@ const Policy = ({ policyDetails }) => {
       </div>
     </div>
   );
+};
+
+Policy.defaultProps = {
+  policyDetails: {
+    policyRef: '',
+    cover: '',
+    car: '',
+    address: '',
+  },
+};
+
+Policy.propTypes = {
+  policyDetails: PropTypes.shape({
+    policyRef: PropTypes.string,
+    cover: PropTypes.string,
+    car: PropTypes.string,
+    address: PropTypes.string,
+  })
 };
 
 export default Policy;
