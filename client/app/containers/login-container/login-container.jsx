@@ -12,10 +12,10 @@ const LoginContainer = ({ state, actions }) => {
 
   return (
     <>
-      {state.fetchDataRequestStatus === "success" && <Redirect to="/policy" />}
-      {state.fetchDataRequestStatus !== "success" && (
+      {state.fetchLoginRequestStatus === "success" && <Redirect to="/policy" />}
+      {state.fetchLoginRequestStatus !== "success" && (
         <Login
-          loginStatus={state.fetchDataRequestStatus}
+          loginStatus={state.fetchLoginRequestStatus}
           onLoginSubmit={handleLoginSubmit}
         />
       )}
