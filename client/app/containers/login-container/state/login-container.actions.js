@@ -9,8 +9,9 @@ export const fetchLoginSuccess = (data) => {
   localStorage.setItem('access-token', data['access_token']);
 
   return {
-  type: CONSTANTS.FETCH_LOGIN_SUCCESS,
-}};
+    type: CONSTANTS.FETCH_LOGIN_SUCCESS,
+  }
+};
 
 export const fetchLoginRejected = () => ({
   type: CONSTANTS.FETCH_LOGIN_REJECTED,
