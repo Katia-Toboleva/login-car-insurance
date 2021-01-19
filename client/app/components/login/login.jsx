@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   Text,
   Input,
@@ -27,7 +28,7 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
   };
 
   const handleLoginSubmit = () => {
-    if(username && password) {
+    if (username && password) {
       onLoginSubmit({
         username,
         password,
@@ -80,13 +81,23 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
             type="login"
             text="sign in"
             size="medium"
-            active={username && password}
+            active={username !== '' && password !== ''}
             onClick={handleLoginSubmit}
           />
         </div>
       </div>
     </div>
   );
+};
+
+Login.defaultProps = {
+  loginStatus: 'pending',
+  onLoginSubmit: () => { },
+};
+
+Login.propTypes = {
+  loginStatus: PropTypes.oneOf(['pending', 'rejected', 'success']),
+  onLoginSubmit: PropTypes.func,
 };
 
 export default Login;
