@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames/bind';
 import styles from './text.scss';
 
@@ -26,6 +27,22 @@ const Text = (props) => {
       <span>{text}</span>
     </div>
   );
+};
+
+Text.defaultProps = {
+  text: '',
+  size: 'medium',
+  color: 'black',
+  center: false,
+};
+
+Text.propTypes = {
+  text: PropTypes.string,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  color: PropTypes.oneOf(['white', 'black']),
+  center: PropTypes.bool,
+  transform: PropTypes.string,
+  weight: PropTypes.string,
 };
 
 export default Text;
