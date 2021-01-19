@@ -1,21 +1,23 @@
 import CONSTANTS from './policy-container.constants';
 import { createReducer } from '../../../state/utilities';
 
-const initialState = {
+export const initialState = {
   policyDetails: {},
   fetchPolicyRequestStatus: null,
 };
 
-const fetchPolicyPending = (state, payload) => {
+export const fetchPolicyPending = (state, payload) => {
   return {
     fetchPolicyRequestStatus: 'pending',
   };
 };
 
-const fetchPolicySuccess = (state, payload) => {
+export const fetchPolicySuccess = (state, payload) => {
   const {policy, vehicle} = payload.data;
   const {cover, address} = policy;
   const {make, model, colour, reg} = vehicle;
+
+  console.log(payload.data)
 
   return {
     policyDetails: {
@@ -28,7 +30,7 @@ const fetchPolicySuccess = (state, payload) => {
   };
 };
 
-const fetchPolicyRejected = (state, payload) => {
+export const fetchPolicyRejected = (state, payload) => {
   return {
     fetchPolicyRequestStatus: 'rejected',
   };
@@ -40,7 +42,7 @@ const atoms = {
   [CONSTANTS.FETCH_POLICY_REJECTED]: fetchPolicyRejected,
 };
 
-const policyReducer = createReducer({
+export const policyReducer = createReducer({
   initialState,
   atoms,
 });
