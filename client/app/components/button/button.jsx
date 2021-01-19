@@ -1,4 +1,5 @@
 import React, { useState }  from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames/bind';
 import { Text } from '@components';
 import styles from './button.scss';
@@ -46,6 +47,22 @@ const Button = (props) => {
       />
     </div>
   );
+};
+
+Button.defaultProps = {
+  text: '',
+  size: 'medium',
+  type: 'login',
+  active: false,
+  onClick: () => {},
+};
+
+Button.propTypes = {
+  text: PropTypes.string,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  type: PropTypes.oneOf(['login']),
+  active: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default Button;
