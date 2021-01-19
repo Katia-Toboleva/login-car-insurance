@@ -1,4 +1,4 @@
-export const fetchLogin = ({ username, password }) => {
+export const fetchLoginApi = ({ username, password }) => {
   const options = {
     method: 'POST',
     headers: {

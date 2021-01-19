@@ -1,21 +1,21 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Policy, Spinner } from '@components';
 import * as actions from './state/policy-container.actions';
 
 const PolicyContainer = ({ state, actions }) => {
-  const { fetchDataRequestStatus, policyDetails} = state;
+  const { fetchPolicyRequestStatus, policyDetails } = state;
 
   useEffect(() => {
     actions.fetchPolicy();
-  }, [])
+  }, []);
 
   return (
     <>
-      {fetchDataRequestStatus === "rejected" && <div>Error!</div> }
-      {fetchDataRequestStatus === "pending" && <Spinner absolute />}
-      {fetchDataRequestStatus === "success" && (
+      {fetchPolicyRequestStatus === "rejected" && <div>Error!</div>}
+      {fetchPolicyRequestStatus === "pending" && <Spinner absolute />}
+      {fetchPolicyRequestStatus === "success" && (
         <Policy
           policyDetails={policyDetails}
         />
@@ -31,7 +31,7 @@ const mapStateToProps = (store) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    actions: bindActionCreators(actions, dispatch),
+  actions: bindActionCreators(actions, dispatch),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PolicyContainer);

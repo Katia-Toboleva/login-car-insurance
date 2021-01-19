@@ -3,12 +3,12 @@ import { createReducer } from '../../../state/utilities';
 
 const initialState = {
   policyDetails: {},
-  fetchDataRequestStatus: null,
+  fetchPolicyRequestStatus: null,
 };
 
 const fetchPolicyPending = (state, payload) => {
   return {
-    fetchDataRequestStatus: 'pending',
+    fetchPolicyRequestStatus: 'pending',
   };
 };
 
@@ -24,13 +24,13 @@ const fetchPolicySuccess = (state, payload) => {
       car: `${make} ${model} ${colour} ${reg}`,
       address: `${address['line_1']}, ${address['line_2']}, ${address.postcode}.`,
     },
-    fetchDataRequestStatus: 'success',
+    fetchPolicyRequestStatus: 'success',
   };
 };
 
 const fetchPolicyRejected = (state, payload) => {
   return {
-    fetchDataRequestStatus: 'rejected',
+    fetchPolicyRequestStatus: 'rejected',
   };
 };
 

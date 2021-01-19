@@ -1,25 +1,25 @@
 import CONSTANTS from './login-container.constants';
 import { createReducer } from '../../../state/utilities';
 
-const initialState = {
-  fetchDataRequestStatus: null,
+export const initialState = {
+  fetchLoginRequestStatus: null,
 };
 
-const fetchLoginPending = (state, payload) => {
+export const fetchLoginPending = (state, payload) => {
   return {
-    fetchDataRequestStatus: 'pending',
+    fetchLoginRequestStatus: 'pending',
   };
 };
 
-const fetchLoginSuccess = (state, payload) => {
+export const fetchLoginSuccess = (state, payload) => {
   return {
-    fetchDataRequestStatus: 'success',
+    fetchLoginRequestStatus: 'success',
   };
 };
 
-const fetchLoginRejected = (state, payload) => {
+export const fetchLoginRejected = (state, payload) => {
   return {
-    fetchDataRequestStatus: 'rejected',
+    fetchLoginRequestStatus: 'rejected',
   };
 };
 
