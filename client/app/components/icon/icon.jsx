@@ -27,8 +27,8 @@ const Icon = ({
 
 Icon.defaultProps = {
   icon: 'closedEye',
-  size: 'grey',
-  color: 'medium',
+  size: 'medium',
+  color: 'grey',
   onClick: () => { },
 };
 
