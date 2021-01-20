@@ -17,8 +17,6 @@ export const fetchPolicySuccess = (state, payload) => {
   const {cover, address} = policy;
   const {make, model, colour, reg} = vehicle;
 
-  console.log(payload.data)
-
   return {
     policyDetails: {
       policyRef: policy['policy_ref'],
