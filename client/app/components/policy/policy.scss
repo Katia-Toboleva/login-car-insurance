@@ -1,3 +1,5 @@
+@import 'colors.scss';
+
 .policy {
   background-color: rgb(255, 255, 255);
   padding: 70px;
@@ -20,6 +22,21 @@
   &__body {
     > :not(:last-child) {
       margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    padding-bottom: 10px;
+
+    ::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background-color: $color-red;
     }
   }
 }
