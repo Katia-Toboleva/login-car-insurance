@@ -7,6 +7,9 @@ import {
 
 describe('LoginContainer actions', () => {
   describe('fetchLoginPending', () => {
+    beforeEach(() => {
+      localStorage.clear();
+    });
     it('should return the correct data', () => {
       const received = fetchLoginPending();
 
@@ -15,6 +18,10 @@ describe('LoginContainer actions', () => {
       };
 
       expect(received).toMatchObject(expected);
+    });
+
+    it('localStorage is NOT updated', () => {
+      expect(Object.keys(localStorage.__STORE__).length).toBe(0);
     });
   });
 
@@ -36,6 +43,10 @@ describe('LoginContainer actions', () => {
   });
 
   describe('fetchLoginRejected', () => {
+    beforeEach(() => {
+      localStorage.clear();
+    });
+
     it('should return the correct data', () => {
       const received = fetchLoginRejected();
 
@@ -44,6 +55,10 @@ describe('LoginContainer actions', () => {
       };
 
       expect(received).toMatchObject(expected);
+    });
+
+    it('localStorage is NOT updated', () => {
+      expect(Object.keys(localStorage.__STORE__).length).toBe(0);
     });
   });
 
