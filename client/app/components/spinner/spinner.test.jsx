@@ -6,7 +6,7 @@ const getUnit = (props) => (
   shallow(<Spinner {...props} />)
 );
 
-describe('Text', () => {
+describe('Spinner', () => {
   describe('render', () => {
     it('should render correctly', () => {
       const wrapper = getUnit();
