@@ -1,9 +1,9 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Button from './button';
 
 const getUnit = (props) => (
-  shallow(<Button {...props} />)
+  mount(<Button {...props} />)
 );
 
 describe('Button', () => {

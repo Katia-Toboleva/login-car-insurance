@@ -1,52 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button render handleMouseEnter updates html correctly 1`] = `
-<div
-  className="button button--type-login button--hovered button--disabled"
+<Button
+  active={false}
   onClick={[Function]}
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
+  size="medium"
+  text="sign in"
+  type="login"
 >
-  <Text
-    center={false}
-    color="white"
-    size="medium"
-    text="sign in"
-    transform="uppercase"
-  />
-</div>
+  <div
+    className="button button--type-login button--hovered button--disabled"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <Text
+      center={false}
+      color="white"
+      size="medium"
+      text="sign in"
+      transform="uppercase"
+    >
+      <div
+        className="text text--size-medium text--color-white text--transform-uppercase"
+      >
+        <span>
+          sign in
+        </span>
+      </div>
+    </Text>
+  </div>
+</Button>
 `;
 
 exports[`Button render handleMouseLeave updates html correctly 1`] = `
-<div
-  className="button button--type-login button--disabled"
+<Button
+  active={false}
   onClick={[Function]}
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
+  size="medium"
+  text="sign in"
+  type="login"
 >
-  <Text
-    center={false}
-    color="white"
-    size="medium"
-    text="sign in"
-    transform="uppercase"
-  />
-</div>
+  <div
+    className="button button--type-login button--disabled"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <Text
+      center={false}
+      color="white"
+      size="medium"
+      text="sign in"
+      transform="uppercase"
+    >
+      <div
+        className="text text--size-medium text--color-white text--transform-uppercase"
+      >
+        <span>
+          sign in
+        </span>
+      </div>
+    </Text>
+  </div>
+</Button>
 `;
 
 exports[`Button render should render correctly 1`] = `
-<div
-  className="button button--type-login button--disabled"
+<Button
+  active={false}
   onClick={[Function]}
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
+  size="medium"
+  text="sign in"
+  type="login"
 >
-  <Text
-    center={false}
-    color="white"
-    size="medium"
-    text="sign in"
-    transform="uppercase"
-  />
-</div>
+  <div
+    className="button button--type-login button--disabled"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <Text
+      center={false}
+      color="white"
+      size="medium"
+      text="sign in"
+      transform="uppercase"
+    >
+      <div
+        className="text text--size-medium text--color-white text--transform-uppercase"
+      >
+        <span>
+          sign in
+        </span>
+      </div>
+    </Text>
+  </div>
+</Button>
 `;
