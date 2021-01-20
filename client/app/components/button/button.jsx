@@ -16,17 +16,18 @@ const Button = (props) => {
     onClick,
   } = props;
 
+
   const handleMouseEnter = () => {
     setHovered(true);
-  }
+  };
 
   const handleMouseLeave = () => {
     setHovered(false);
-  }
+  };
 
   const handleButtonClick = () => {
     onClick(type);
-  }
+  };
 
   return (
     <div
@@ -50,7 +51,7 @@ const Button = (props) => {
 };
 
 Button.defaultProps = {
-  text: '',
+  text: 'sign in',
   size: 'medium',
   type: 'login',
   active: false,
@@ -60,7 +61,7 @@ Button.defaultProps = {
 Button.propTypes = {
   text: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  type: PropTypes.oneOf(['login']),
+  type: PropTypes.oneOf(['login']).isRequired,
   active: PropTypes.bool,
   onClick: PropTypes.func,
 };

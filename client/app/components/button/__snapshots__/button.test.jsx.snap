@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button render handleMouseEnter updates html correctly 1`] = `
+<div
+  className="button button--type-login button--hovered button--disabled"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <Text
+    center={false}
+    color="white"
+    size="medium"
+    text="sign in"
+    transform="uppercase"
+  />
+</div>
+`;
+
+exports[`Button render handleMouseLeave updates html correctly 1`] = `
+<div
+  className="button button--type-login button--disabled"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <Text
+    center={false}
+    color="white"
+    size="medium"
+    text="sign in"
+    transform="uppercase"
+  />
+</div>
+`;
+
+exports[`Button render should render correctly 1`] = `
+<div
+  className="button button--type-login button--disabled"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <Text
+    center={false}
+    color="white"
+    size="medium"
+    text="sign in"
+    transform="uppercase"
+  />
+</div>
+`;
