@@ -3,7 +3,8 @@ import { fetchLoginApi } from './login-container.api';
 describe('LoginContainer api', () => {
   beforeEach(() => {
     fetch.resetMocks();
-  })
+  });
+
   describe('fetchLoginApi', () => {
     it('should load correct data', () => {
       const userDetails = { username: 'myname', password: '123' }
@@ -25,6 +26,6 @@ describe('LoginContainer api', () => {
       expect(fetch).toHaveBeenCalledTimes(1);
       expect(fetch).toHaveBeenCalledWith(url, options);
       expect(typeof received.then).toBe("function");
-    })
+    });
   });
 });
