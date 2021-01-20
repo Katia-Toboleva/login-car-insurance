@@ -1,4 +1,4 @@
-export const fetchPolicy = () => {
+export const fetchPolicyApi = () => {
   const accessToken = localStorage.getItem('access-token');
 
   const options = {
