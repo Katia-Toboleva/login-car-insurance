@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Policy render should render correctly 1`] = `
+<div
+  className="policy__wrapper"
+>
+  <div
+    className="policy"
+  >
+    <div
+      className="policy__title"
+    >
+      <Text
+        center={false}
+        color="black"
+        size="large"
+        text="my policy"
+        transform="capitalize"
+        weight="bold"
+      />
+    </div>
+    <div
+      className="policy__body"
+    >
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="Policy reference:"
+        weight="bold"
+      />
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="123"
+      />
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="Cover type:"
+        weight="bold"
+      />
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="allIncl"
+      />
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="Car:"
+        weight="bold"
+      />
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="bmw"
+        transform="capitalize"
+      />
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="Address:"
+        weight="bold"
+      />
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="123 flat, city, postcode"
+      />
+    </div>
+  </div>
+</div>
+`;
