@@ -15,7 +15,7 @@ exports[`LoginContainer handleLoginSubmit calls fetchLogin correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "j6x7tv",
+          "key": "cfquf1",
           "pathname": "/policy",
           "search": "",
           "state": undefined,
@@ -230,7 +230,7 @@ exports[`LoginContainer render should NOT redirect if fetchLoginRequestStatus is
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "j6x7tv",
+          "key": "cfquf1",
           "pathname": "/policy",
           "search": "",
           "state": undefined,
@@ -452,7 +452,7 @@ exports[`LoginContainer render should NOT redirect if fetchLoginRequestStatus is
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "j6x7tv",
+          "key": "cfquf1",
           "pathname": "/policy",
           "search": "",
           "state": undefined,
@@ -670,7 +670,7 @@ exports[`LoginContainer render should redirect if fetchLoginRequestStatus is suc
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "j6x7tv",
+          "key": "cfquf1",
           "pathname": "/policy",
           "search": "",
           "state": undefined,

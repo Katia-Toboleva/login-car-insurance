@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Policy, Spinner } from '@components';
 import * as actions from './state/policy-container.actions';
 
-const PolicyContainer = ({ state, actions }) => {
+export const PolicyContainer = ({ state, actions }) => {
   const { fetchPolicyRequestStatus, policyDetails } = state;
 
   useEffect(() => {

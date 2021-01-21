@@ -1,0 +1,533 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PolicyContainer render should render Policy if fetchPolicyRequestStatus is success 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <PolicyContainer
+      actions={
+        Object {
+          "fetchPolicy": [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        }
+      }
+      state={
+        Object {
+          "fetchPolicyRequestStatus": "success",
+        }
+      }
+    >
+      <Policy
+        policyDetails={
+          Object {
+            "address": "",
+            "car": "",
+            "cover": "",
+            "policyRef": "",
+          }
+        }
+      >
+        <div
+          className="policy__wrapper"
+        >
+          <div
+            className="policy"
+          >
+            <div
+              className="policy__title"
+            >
+              <Text
+                center={false}
+                color="black"
+                size="large"
+                text="my policy"
+                transform="capitalize"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-large text--color-black text--transform-capitalize text--weight-bold"
+                >
+                  <span>
+                    my policy
+                  </span>
+                </div>
+              </Text>
+            </div>
+            <div
+              className="policy__body"
+            >
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="Policy reference:"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--weight-bold"
+                >
+                  <span>
+                    Policy reference:
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text=""
+              >
+                <div
+                  className="text text--size-medium text--color-black"
+                >
+                  <span />
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="Cover type:"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--weight-bold"
+                >
+                  <span>
+                    Cover type:
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text=""
+              >
+                <div
+                  className="text text--size-medium text--color-black"
+                >
+                  <span />
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="Car:"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--weight-bold"
+                >
+                  <span>
+                    Car:
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text=""
+                transform="capitalize"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--transform-capitalize"
+                >
+                  <span />
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="Address:"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--weight-bold"
+                >
+                  <span>
+                    Address:
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text=""
+              >
+                <div
+                  className="text text--size-medium text--color-black"
+                >
+                  <span />
+                </div>
+              </Text>
+            </div>
+          </div>
+        </div>
+      </Policy>
+    </PolicyContainer>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`PolicyContainer render should render Spinner if fetchPolicyRequestStatus is pending 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <PolicyContainer
+      actions={
+        Object {
+          "fetchPolicy": [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        }
+      }
+      state={
+        Object {
+          "fetchPolicyRequestStatus": "pending",
+        }
+      }
+    >
+      <Spinner
+        absolute={true}
+      >
+        <div
+          className="spinner spinner--absolute"
+        />
+      </Spinner>
+    </PolicyContainer>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`PolicyContainer render should render error if fetchPolicyRequestStatus is rejected 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <PolicyContainer
+      actions={
+        Object {
+          "fetchPolicy": [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        }
+      }
+      state={
+        Object {
+          "fetchPolicyRequestStatus": "rejected",
+        }
+      }
+    >
+      <div>
+        Error!
+      </div>
+    </PolicyContainer>
+  </Router>
+</BrowserRouter>
+`;
+
+exports[`PolicyContainer useEffect should be called when component mounts 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <PolicyContainer
+      actions={
+        Object {
+          "fetchPolicy": [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        }
+      }
+      state={
+        Object {
+          "fetchPolicyRequestStatus": "success",
+          "policyDetails": Object {
+            "address": "123 London",
+            "car": "bmw",
+            "cover": "all",
+            "policyRef": "abc",
+          },
+        }
+      }
+    >
+      <Policy
+        policyDetails={
+          Object {
+            "address": "123 London",
+            "car": "bmw",
+            "cover": "all",
+            "policyRef": "abc",
+          }
+        }
+      >
+        <div
+          className="policy__wrapper"
+        >
+          <div
+            className="policy"
+          >
+            <div
+              className="policy__title"
+            >
+              <Text
+                center={false}
+                color="black"
+                size="large"
+                text="my policy"
+                transform="capitalize"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-large text--color-black text--transform-capitalize text--weight-bold"
+                >
+                  <span>
+                    my policy
+                  </span>
+                </div>
+              </Text>
+            </div>
+            <div
+              className="policy__body"
+            >
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="Policy reference:"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--weight-bold"
+                >
+                  <span>
+                    Policy reference:
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="abc"
+              >
+                <div
+                  className="text text--size-medium text--color-black"
+                >
+                  <span>
+                    abc
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="Cover type:"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--weight-bold"
+                >
+                  <span>
+                    Cover type:
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="all"
+              >
+                <div
+                  className="text text--size-medium text--color-black"
+                >
+                  <span>
+                    all
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="Car:"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--weight-bold"
+                >
+                  <span>
+                    Car:
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="bmw"
+                transform="capitalize"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--transform-capitalize"
+                >
+                  <span>
+                    bmw
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="Address:"
+                weight="bold"
+              >
+                <div
+                  className="text text--size-medium text--color-black text--weight-bold"
+                >
+                  <span>
+                    Address:
+                  </span>
+                </div>
+              </Text>
+              <Text
+                center={false}
+                color="black"
+                size="medium"
+                text="123 London"
+              >
+                <div
+                  className="text text--size-medium text--color-black"
+                >
+                  <span>
+                    123 London
+                  </span>
+                </div>
+              </Text>
+            </div>
+          </div>
+        </div>
+      </Policy>
+    </PolicyContainer>
+  </Router>
+</BrowserRouter>
+`;
