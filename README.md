@@ -1,5 +1,13 @@
 # Login Car Insurance
 
+# Table of Contents
+1. [Description](#description)
+2. [Technologies](#technologies)
+3. [Demo](#demo)
+4. [Installation, viewing and testing](#installation-viewing-and-testing)
+5. [Implementation, observations, other notes](#implementation-observations-other-notes)
+
+
 ## Description: 
 This web application consists of a login screen which takes a username and password. Once authorised, it navigates the user to another page which displays policy details. The app uses a Policy API that provides two API endpoints: Login and Policy details.
 </br>
@@ -25,7 +33,7 @@ React, React Hooks, React Router, Redux state management, JavaScript, APIs, Asyn
 3. View the project in the browser: `npm run start`
 4. Testing: `npm run test`
 
-## Notes, decisions, observations
+## Implementation, observations, other notes
 
 ### Structure
 As the app is built with React and the state is managed with Redux, I have split the logic between **Components** and **Containers**.
