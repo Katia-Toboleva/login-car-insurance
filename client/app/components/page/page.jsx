@@ -12,7 +12,7 @@ const IsLoggedin = ({ children }) => {
   return (
     <Redirect to='/login' />
   )
-}
+};
 
 const Page = () => {
   return (
