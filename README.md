@@ -1,6 +1,6 @@
 # Login Car Insurance
 
-# Table of Contents
+## Table of Contents
 1. [Description](#description)
 2. [Technologies](#technologies)
 3. [Demo](#demo)
