@@ -3,97 +3,6 @@
 exports[`Input handleChange updates html correctly 1`] = `
 <Input
   onChange={[Function]}
-  onKeyUp={[Function]}
-  placeholder="text"
-  value=""
->
-  <div
-    className="input"
-  >
-    <span
-      className="input__header"
-    >
-      <Text
-        center={false}
-        color="black"
-        size="medium"
-        text="text"
-        transform="capitalize"
-      >
-        <div
-          className="text text--size-medium text--color-black text--transform-capitalize"
-        >
-          <span>
-            text
-          </span>
-        </div>
-      </Text>
-    </span>
-    <input
-      className="input__body"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyUp={[Function]}
-      placeholder="text"
-      value=""
-    />
-    <span
-      className="input__underline"
-    />
-  </div>
-</Input>
-`;
-
-exports[`Input handleInputBlur updates html correctly 1`] = `
-<Input
-  onChange={[Function]}
-  onKeyUp={[Function]}
-  placeholder="text"
-  value=""
->
-  <div
-    className="input"
-  >
-    <span
-      className="input__header"
-    >
-      <Text
-        center={false}
-        color="black"
-        size="medium"
-        text="text"
-        transform="capitalize"
-      >
-        <div
-          className="text text--size-medium text--color-black text--transform-capitalize"
-        >
-          <span>
-            text
-          </span>
-        </div>
-      </Text>
-    </span>
-    <input
-      className="input__body"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyUp={[Function]}
-      placeholder="text"
-      value=""
-    />
-    <span
-      className="input__underline"
-    />
-  </div>
-</Input>
-`;
-
-exports[`Input handleInputFocus updates html correctly 1`] = `
-<Input
-  onChange={[Function]}
-  onKeyUp={[Function]}
   placeholder="text"
   value=""
 >
@@ -124,9 +33,8 @@ exports[`Input handleInputFocus updates html correctly 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      onKeyUp={[Function]}
       placeholder="text"
-      value=""
+      value="a"
     />
     <span
       className="input__underline"
@@ -135,10 +43,9 @@ exports[`Input handleInputFocus updates html correctly 1`] = `
 </Input>
 `;
 
-exports[`Input render should render correctly 1`] = `
+exports[`Input handleInputBlur updates html correctly 1`] = `
 <Input
   onChange={[Function]}
-  onKeyUp={[Function]}
   placeholder="text"
   value=""
 >
@@ -169,7 +76,92 @@ exports[`Input render should render correctly 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
-      onKeyUp={[Function]}
+      placeholder="text"
+      value=""
+    />
+    <span
+      className="input__underline"
+    />
+  </div>
+</Input>
+`;
+
+exports[`Input handleInputFocus updates html correctly 1`] = `
+<Input
+  onChange={[Function]}
+  placeholder="text"
+  value=""
+>
+  <div
+    className="input input--focused"
+  >
+    <span
+      className="input__header"
+    >
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="text"
+        transform="capitalize"
+      >
+        <div
+          className="text text--size-medium text--color-black text--transform-capitalize"
+        >
+          <span>
+            text
+          </span>
+        </div>
+      </Text>
+    </span>
+    <input
+      className="input__body"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="text"
+      value=""
+    />
+    <span
+      className="input__underline"
+    />
+  </div>
+</Input>
+`;
+
+exports[`Input render should render correctly 1`] = `
+<Input
+  onChange={[Function]}
+  placeholder="text"
+  value=""
+>
+  <div
+    className="input"
+  >
+    <span
+      className="input__header"
+    >
+      <Text
+        center={false}
+        color="black"
+        size="medium"
+        text="text"
+        transform="capitalize"
+      >
+        <div
+          className="text text--size-medium text--color-black text--transform-capitalize"
+        >
+          <span>
+            text
+          </span>
+        </div>
+      </Text>
+    </span>
+    <input
+      className="input__body"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
       placeholder="text"
       value=""
     />

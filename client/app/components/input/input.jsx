@@ -6,11 +6,11 @@ import styles from './input.scss';
 
 const cx = classnames.bind(styles);
 
-const Input = ({ placeholder, type, onChange, onKeyUp }) => {
+const Input = ({ placeholder, type, onChange, name }) => {
   const [state, setState] = useState({ focused: false, value: '' });
 
   const handleChange = (event) => {
-    const { value } = event.currentTarget;
+    const { value } = event.target;
 
     setState({
       ...state,
@@ -18,14 +18,6 @@ const Input = ({ placeholder, type, onChange, onKeyUp }) => {
     });
 
     onChange(value);
-  };
-
-  const handleInputKeyUp = (event) => {
-    if (event.keyCode === 13) {
-      onKeyUp();
-    }
-
-    return null;
   };
 
   const handleInputFocus = () => {
@@ -57,9 +49,9 @@ const Input = ({ placeholder, type, onChange, onKeyUp }) => {
       <input
         className={styles['input__body']}
         type={type}
+        name={name}
         value={state.value}
         placeholder={placeholder}
-        onKeyUp={handleInputKeyUp}
         onChange={handleChange}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
@@ -74,14 +66,12 @@ Input.defaultProps = {
   value: '',
   placeholder: 'text',
   onChange: () => { },
-  onKeyUp: () => { },
 };
 
 Input.propTypes = {
   placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
-  onKeyUp: PropTypes.func,
 };
 
 export default Input;
