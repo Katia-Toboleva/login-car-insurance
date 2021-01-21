@@ -50,7 +50,7 @@ Alternatively, it would be possible to store the "access_token" in the state and
 ### Routes
 React Router has been chosen to manage redirecting between LoginContainer and PolicyContainer as it provides easy and clean solution for routing. The stucture and logic for the routes can be found in Page component. Routes and paths in this App:</br></br>
 `http://localhost:8080/` or `http://localhost:8080` or `http://localhost:8080/login`: **LoginContainer**</br></br>
-`http://localhost:8080/policy`: PolicyContainer</br></br>
+`http://localhost:8080/policy`: **PolicyContainer**</br></br>
 **Please note**: as Logout has not been required for this App and the "access_token" is saved in localStorage, once the User is logged in, when the page is refreshed, the user stays on `/policy` route. In case you need to view Login page again, please go to `http://localhost:8080/login` (or any of the routes mentioned above for LoginContainer).
 
 ### Tests
