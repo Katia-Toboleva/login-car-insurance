@@ -1,4 +1,4 @@
-## Login Car Insurance
+# Login Car Insurance
 
 ### Description: 
 This web application consists of a login screen which takes a username and password. Once authorised, it navigates the user to another page which displays policy details. The app uses a Policy API that provides two API endpoints: Login and Policy details.
@@ -16,4 +16,9 @@ React, React Hooks, React Router, Redux state management, JavaScript, APIs, Asyn
 
 ![login-car-insurance-2](https://user-images.githubusercontent.com/66952678/105356321-28824400-5beb-11eb-93df-5188a198af3c.gif)
 
-
+### Installation, viewing and testing
+1. Clone the repo in your code editor 
+`git clone https://github.com/Katia-Toboleva/login-car-insurance.git`
+2. Install NPM packages `npm install`
+3. View the project in the browser: `npm run start`
+4. Testing: `npm run test`
