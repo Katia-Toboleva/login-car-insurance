@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubmitButton render handleMouseEnter updates html correctly 1`] = `
+<input
+  className="submit-button submit-button--hovered submit-button--disabled"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  type="submit"
+  value="sign in"
+/>
+`;
+
+exports[`SubmitButton render handleMouseLeave updates html correctly 1`] = `
+<input
+  className="submit-button submit-button--disabled"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  type="submit"
+  value="sign in"
+/>
+`;
+
+exports[`SubmitButton render should render correctly 1`] = `
+<input
+  className="submit-button submit-button--disabled"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  type="submit"
+  value="sign in"
+/>
+`;

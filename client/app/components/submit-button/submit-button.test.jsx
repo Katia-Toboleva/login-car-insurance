@@ -1,12 +1,12 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import Button from './button';
+import { shallow } from 'enzyme';
+import SubmitButton from './submit-button';
 
 const getUnit = (props) => (
-  mount(<Button {...props} />)
+  shallow(<SubmitButton {...props} />)
 );
 
-describe('Button', () => {
+describe('SubmitButton', () => {
   describe('render', () => {
     it('should render correctly', () => {
       const wrapper = getUnit();
@@ -17,7 +17,7 @@ describe('Button', () => {
     describe('handleMouseEnter', () => {
       it('updates html correctly', () => {
         const wrapper = getUnit();
-        wrapper.find('.button').simulate('mouseEnter');
+        wrapper.find('.submit-button').simulate('mouseEnter');
 
         expect(wrapper).toMatchSnapshot();
       });
@@ -26,20 +26,9 @@ describe('Button', () => {
     describe('handleMouseLeave', () => {
       it('updates html correctly', () => {
         const wrapper = getUnit();
-        wrapper.find('.button').simulate('mouseLeave');
+        wrapper.find('.submit-button').simulate('mouseLeave');
 
         expect(wrapper).toMatchSnapshot();
-      });
-    });
-
-    describe('handleButtonClick', () => {
-      it('calls props.onClick', () => {
-        const cb = jest.fn();
-        const type = 'login';
-        const wrapper = getUnit({ onClick: cb, type });
-        wrapper.find('.button').simulate('click');
-
-        expect(cb).toHaveBeenCalledWith(type);
       });
     });
   });

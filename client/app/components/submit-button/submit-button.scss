@@ -1,14 +1,13 @@
 @import 'colors.scss';
 
-.button {
+.submit-button {
   cursor: pointer;
   display: inline-block;
   padding: 10px 40px;
-
-  &--type-login {
-    background-color: $color-red;
-    color: $color-white;
-  }
+  color: $color-white;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: $color-red;
 
   &--hovered {
     background-color: $color-dark-red;
@@ -17,4 +16,8 @@
   &--disabled {
     background-color: $color-light-grey;
   }
-}
+
+  &:focus {
+    outline: 0;
+  }
+};
