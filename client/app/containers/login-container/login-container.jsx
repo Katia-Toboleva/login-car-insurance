@@ -5,7 +5,7 @@ import { Login } from '@components';
 import * as actions from './state/login-container.actions';
 import { Redirect } from 'react-router-dom';
 
-const LoginContainer = ({ state, actions }) => {
+ export const LoginContainer = ({ state, actions }) => {
   const handleLoginSubmit = (data) => {
     actions.fetchLogin(data)
   }
