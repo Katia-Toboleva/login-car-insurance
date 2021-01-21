@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login render should render correctly with default values(pending status) 1`] = `
+<div
+  className="login__wrapper"
+>
+  <div
+    className="login"
+  >
+    <div
+      className="login__title"
+    >
+      <Text
+        center={true}
+        color="black"
+        size="large"
+        text="sign in"
+        transform="capitalize"
+        weight="bold"
+      />
+    </div>
+    <div
+      className="login__body"
+    >
+      <Input
+        onChange={[Function]}
+        onKeyUp={[Function]}
+        placeholder="user name"
+        type="text"
+        value=""
+      />
+      <div
+        className="login__password"
+      >
+        <Input
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="password"
+          type="password"
+          value=""
+        />
+        <div
+          className="login__password__icon"
+        >
+          <Icon
+            color="grey"
+            icon="closedEye"
+            onClick={[Function]}
+            size="medium"
+          />
+        </div>
+      </div>
+    </div>
+    <Spinner
+      absolute={false}
+    />
+    <div
+      className="login__controls"
+    >
+      <Button
+        active={false}
+        onClick={[Function]}
+        size="medium"
+        text="sign in"
+        type="login"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Login render should render correctly with loginStatus rejected 1`] = `
+<div
+  className="login__wrapper"
+>
+  <div
+    className="login"
+  >
+    <div
+      className="login__title"
+    >
+      <Text
+        center={true}
+        color="black"
+        size="large"
+        text="sign in"
+        transform="capitalize"
+        weight="bold"
+      />
+    </div>
+    <div
+      className="login__body"
+    >
+      <Input
+        onChange={[Function]}
+        onKeyUp={[Function]}
+        placeholder="user name"
+        type="text"
+        value=""
+      />
+      <div
+        className="login__password"
+      >
+        <Input
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          placeholder="password"
+          type="password"
+          value=""
+        />
+        <div
+          className="login__password__icon"
+        >
+          <Icon
+            color="grey"
+            icon="closedEye"
+            onClick={[Function]}
+            size="medium"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      Oops! Wrong Username or Password
+    </div>
+    <div
+      className="login__controls"
+    >
+      <Button
+        active={false}
+        onClick={[Function]}
+        size="medium"
+        text="sign in"
+        type="login"
+      />
+    </div>
+  </div>
+</div>
+`;
