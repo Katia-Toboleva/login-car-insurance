@@ -1,9 +1,9 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Login from './login';
 
 const getUnit = (props) => (
-  shallow(<Login {...props} />)
+  mount(<Login {...props} />)
 );
 
 describe('Login', () => {
@@ -16,6 +16,19 @@ describe('Login', () => {
 
     it('should render correctly with loginStatus rejected', () => {
       const wrapper = getUnit({ loginStatus: 'rejected' });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('handleLoginSubmit', () => {
+    it('should call onLoginSubmit', () => {
+      const cb = jest.fn();
+      const wrapper = getUnit({ onLoginSubmit: cb });
+      const form = wrapper.find('form').at(0);
+      form.simulate('submit',
+        { preventDefault () {} }
+      );
 
       expect(wrapper).toMatchSnapshot();
     });

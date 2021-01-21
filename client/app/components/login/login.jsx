@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {
   Text,
   Input,
-  Button,
+  SubmitButton,
   Spinner,
   Icon,
 } from '@components';
@@ -27,15 +27,14 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
     setInputType(!typePassword);
   };
 
-  const handleLoginSubmit = () => {
+  const handleLoginSubmit = (event) => {
+    event.preventDefault();
     if (username && password) {
       onLoginSubmit({
         username,
         password,
       });
     }
-
-    return null;
   };
 
   return (
@@ -50,41 +49,41 @@ const Login = ({ loginStatus, onLoginSubmit }) => {
             center
           />
         </div>
-        <div className={styles['login__body']}>
-          <Input
-            type="text"
-            placeholder="user name"
-            onChange={handleUsernameChange}
-            onKeyUp={handleLoginSubmit}
-          />
-          <div className={styles['login__password']}>
+        <form onSubmit={handleLoginSubmit}>
+          <div className={styles['login__body']}>
             <Input
-              type={typePassword ? "password" : "text"}
-              placeholder="password"
-              onChange={handlePasswordChange}
-              onKeyUp={handleLoginSubmit}
+              type="text"
+              name="username"
+              placeholder="user name"
+              onChange={handleUsernameChange}
             />
-            <div className={styles['login__password__icon']}>
-              <Icon
-                icon={typePassword ? "closedEye" : "openEye"}
-                color={typePassword ? "grey" : "red"}
-                size="medium"
-                onClick={handleInputTypeClick}
+            <div className={styles['login__password']}>
+              <Input
+                type={typePassword ? "password" : "text"}
+                name="password"
+                placeholder="password"
+                onChange={handlePasswordChange}
               />
+              <div className={styles['login__password__icon']}>
+                <Icon
+                  icon={typePassword ? "closedEye" : "openEye"}
+                  color={typePassword ? "grey" : "red"}
+                  size="medium"
+                  onClick={handleInputTypeClick}
+                />
+              </div>
             </div>
           </div>
-        </div>
-        {loginStatus === "pending" && <Spinner />}
-        {loginStatus === "rejected" && <div>Oops! Wrong Username or Password</div>}
-        <div className={styles['login__controls']}>
-          <Button
-            type="login"
-            text="sign in"
-            size="medium"
-            active={username !== '' && password !== ''}
-            onClick={handleLoginSubmit}
-          />
-        </div>
+          {loginStatus === "pending" && <Spinner />}
+          {loginStatus === "rejected" && <div>Oops! Wrong Username or Password</div>}
+          <div className={styles['login__controls']}>
+            <SubmitButton
+              type="submit"
+              text="sign in"
+              active={username !== '' && password !== ''}
+            />
+          </div>
+        </form>
       </div>
     </div>
   );
