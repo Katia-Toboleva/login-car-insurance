@@ -55,10 +55,10 @@ React components have been tested both with Jest and Enzyme to ensure they're al
 For the best management of the app, the general styles such as colours, have been separated in a folder Style where variables are assigned to each colour.
 
 ### Additional implementations
-In addition to current code of the app, I believe the following implementations would be beneficial:</br></br>
-- [ ] Logout Button: the component would clean up information about the policy from the localStorage and redirect the users, e.g. back to Login page.
-- [ ] Media queries: implement logic for mobile and tablet viewports with media queries. 
-- [ ] Url: if the API provided URL for the photos of the insured car, it would be possible to render the images in the policy too.
+In addition to current code of the app, I believe the following implementations would be beneficial:</br>
+- Logout Button: the component would clean up information about the policy from the localStorage and redirect the users, e.g. back to Login page.
+- Media queries: implement logic for mobile and tablet viewports with media queries. 
+- Url: if the API provided URL for the photos of the insured car, it would be possible to render the images in the policy too.
 
 ### Time
 Approximate time for implementation and tests: 4 days.
