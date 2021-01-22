@@ -69,5 +69,5 @@ In addition to current code of the app, I believe the following implementations 
 - Url: if the API provided URL for the photos of the insured car, it would be possible to render the images in the policy too.
 
 ### Time
-Approximate time for implementation and tests: 4 days.
+Approximate time for implementation and tests: 4-5 days.
 
