@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { LoginContainer } from './login-container';
 
 const getUnit = (props) => (
-  mount(
+  shallow(
       <Router>
         <LoginContainer {...props} />
       </Router>
@@ -67,8 +67,6 @@ describe('LoginContainer', () => {
           fetchLogin: fn,
         }
       });
-
-      wrapper.find('form').simulate('submit', { preventDefault () {} });
 
       expect(wrapper).toMatchSnapshot();
     });

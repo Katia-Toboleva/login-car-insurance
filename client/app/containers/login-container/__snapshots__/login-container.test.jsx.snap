@@ -1,707 +1,153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginContainer handleLoginSubmit calls fetchLogin correctly 1`] = `
-<BrowserRouter>
-  <Router
-    history={
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <LoginContainer
+    actions={
       Object {
-        "action": "POP",
-        "block": [Function],
-        "createHref": [Function],
-        "go": [Function],
-        "goBack": [Function],
-        "goForward": [Function],
-        "length": 1,
-        "listen": [Function],
-        "location": Object {
-          "hash": "",
-          "key": "cfquf1",
-          "pathname": "/policy",
-          "search": "",
-          "state": undefined,
-        },
-        "push": [Function],
-        "replace": [Function],
+        "fetchLogin": [MockFunction],
       }
     }
-  >
-    <LoginContainer
-      actions={
-        Object {
-          "fetchLogin": [MockFunction],
-        }
+    state={
+      Object {
+        "fetchLoginRequestStatus": null,
       }
-      state={
-        Object {
-          "fetchLoginRequestStatus": null,
-        }
-      }
-    >
-      <Login
-        loginStatus={null}
-        onLoginSubmit={[Function]}
-      >
-        <div
-          className="login__wrapper"
-        >
-          <div
-            className="login"
-          >
-            <div
-              className="login__title"
-            >
-              <Text
-                center={true}
-                color="black"
-                size="large"
-                text="sign in"
-                transform="capitalize"
-                weight="bold"
-              >
-                <div
-                  className="text text--size-large text--color-black text--transform-capitalize text--weight-bold text--center"
-                >
-                  <span>
-                    sign in
-                  </span>
-                </div>
-              </Text>
-            </div>
-            <form
-              onSubmit={[Function]}
-            >
-              <div
-                className="login__body"
-              >
-                <Input
-                  name="username"
-                  onChange={[Function]}
-                  placeholder="user name"
-                  type="text"
-                  value=""
-                >
-                  <div
-                    className="input"
-                  >
-                    <span
-                      className="input__header"
-                    >
-                      <Text
-                        center={false}
-                        color="black"
-                        size="medium"
-                        text="user name"
-                        transform="capitalize"
-                      >
-                        <div
-                          className="text text--size-medium text--color-black text--transform-capitalize"
-                        >
-                          <span>
-                            user name
-                          </span>
-                        </div>
-                      </Text>
-                    </span>
-                    <input
-                      className="input__body"
-                      name="username"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="user name"
-                      type="text"
-                      value=""
-                    />
-                    <span
-                      className="input__underline"
-                    />
-                  </div>
-                </Input>
-                <div
-                  className="login__password"
-                >
-                  <Input
-                    name="password"
-                    onChange={[Function]}
-                    placeholder="password"
-                    type="password"
-                    value=""
-                  >
-                    <div
-                      className="input"
-                    >
-                      <span
-                        className="input__header"
-                      >
-                        <Text
-                          center={false}
-                          color="black"
-                          size="medium"
-                          text="password"
-                          transform="capitalize"
-                        >
-                          <div
-                            className="text text--size-medium text--color-black text--transform-capitalize"
-                          >
-                            <span>
-                              password
-                            </span>
-                          </div>
-                        </Text>
-                      </span>
-                      <input
-                        className="input__body"
-                        name="password"
-                        onBlur={[Function]}
-                        onChange={[Function]}
-                        onFocus={[Function]}
-                        placeholder="password"
-                        type="password"
-                        value=""
-                      />
-                      <span
-                        className="input__underline"
-                      />
-                    </div>
-                  </Input>
-                  <div
-                    className="login__password__icon"
-                  >
-                    <Icon
-                      color="grey"
-                      icon="closedEye"
-                      onClick={[Function]}
-                      size="medium"
-                    >
-                      <div
-                        className="icon icon--color-grey icon--size-medium icon--clickable"
-                        onClick={[Function]}
-                      >
-                        <i
-                          dangerouslySetInnerHTML={
-                            Object {
-                              "__html": Object {},
-                            }
-                          }
-                        />
-                      </div>
-                    </Icon>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="login__controls"
-              >
-                <SubmitButton
-                  active={false}
-                  text="sign in"
-                  type="submit"
-                >
-                  <input
-                    className="submit-button submit-button--disabled"
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    type="submit"
-                    value="sign in"
-                  />
-                </SubmitButton>
-              </div>
-            </form>
-          </div>
-        </div>
-      </Login>
-    </LoginContainer>
-  </Router>
-</BrowserRouter>
+    }
+  />
+</Router>
 `;
 
 exports[`LoginContainer render should NOT redirect if fetchLoginRequestStatus is pending 1`] = `
-<BrowserRouter>
-  <Router
-    history={
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <LoginContainer
+    actions={
       Object {
-        "action": "POP",
-        "block": [Function],
-        "createHref": [Function],
-        "go": [Function],
-        "goBack": [Function],
-        "goForward": [Function],
-        "length": 1,
-        "listen": [Function],
-        "location": Object {
-          "hash": "",
-          "key": "cfquf1",
-          "pathname": "/policy",
-          "search": "",
-          "state": undefined,
-        },
-        "push": [Function],
-        "replace": [Function],
+        "fetchLogin": [MockFunction],
       }
     }
-  >
-    <LoginContainer
-      actions={
-        Object {
-          "fetchLogin": [MockFunction],
-        }
+    state={
+      Object {
+        "fetchLoginRequestStatus": "pending",
       }
-      state={
-        Object {
-          "fetchLoginRequestStatus": "pending",
-        }
-      }
-    >
-      <Login
-        loginStatus="pending"
-        onLoginSubmit={[Function]}
-      >
-        <div
-          className="login__wrapper"
-        >
-          <div
-            className="login"
-          >
-            <div
-              className="login__title"
-            >
-              <Text
-                center={true}
-                color="black"
-                size="large"
-                text="sign in"
-                transform="capitalize"
-                weight="bold"
-              >
-                <div
-                  className="text text--size-large text--color-black text--transform-capitalize text--weight-bold text--center"
-                >
-                  <span>
-                    sign in
-                  </span>
-                </div>
-              </Text>
-            </div>
-            <form
-              onSubmit={[Function]}
-            >
-              <div
-                className="login__body"
-              >
-                <Input
-                  name="username"
-                  onChange={[Function]}
-                  placeholder="user name"
-                  type="text"
-                  value=""
-                >
-                  <div
-                    className="input"
-                  >
-                    <span
-                      className="input__header"
-                    >
-                      <Text
-                        center={false}
-                        color="black"
-                        size="medium"
-                        text="user name"
-                        transform="capitalize"
-                      >
-                        <div
-                          className="text text--size-medium text--color-black text--transform-capitalize"
-                        >
-                          <span>
-                            user name
-                          </span>
-                        </div>
-                      </Text>
-                    </span>
-                    <input
-                      className="input__body"
-                      name="username"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="user name"
-                      type="text"
-                      value=""
-                    />
-                    <span
-                      className="input__underline"
-                    />
-                  </div>
-                </Input>
-                <div
-                  className="login__password"
-                >
-                  <Input
-                    name="password"
-                    onChange={[Function]}
-                    placeholder="password"
-                    type="password"
-                    value=""
-                  >
-                    <div
-                      className="input"
-                    >
-                      <span
-                        className="input__header"
-                      >
-                        <Text
-                          center={false}
-                          color="black"
-                          size="medium"
-                          text="password"
-                          transform="capitalize"
-                        >
-                          <div
-                            className="text text--size-medium text--color-black text--transform-capitalize"
-                          >
-                            <span>
-                              password
-                            </span>
-                          </div>
-                        </Text>
-                      </span>
-                      <input
-                        className="input__body"
-                        name="password"
-                        onBlur={[Function]}
-                        onChange={[Function]}
-                        onFocus={[Function]}
-                        placeholder="password"
-                        type="password"
-                        value=""
-                      />
-                      <span
-                        className="input__underline"
-                      />
-                    </div>
-                  </Input>
-                  <div
-                    className="login__password__icon"
-                  >
-                    <Icon
-                      color="grey"
-                      icon="closedEye"
-                      onClick={[Function]}
-                      size="medium"
-                    >
-                      <div
-                        className="icon icon--color-grey icon--size-medium icon--clickable"
-                        onClick={[Function]}
-                      >
-                        <i
-                          dangerouslySetInnerHTML={
-                            Object {
-                              "__html": Object {},
-                            }
-                          }
-                        />
-                      </div>
-                    </Icon>
-                  </div>
-                </div>
-              </div>
-              <Spinner
-                absolute={false}
-              >
-                <div
-                  className="spinner"
-                />
-              </Spinner>
-              <div
-                className="login__controls"
-              >
-                <SubmitButton
-                  active={false}
-                  text="sign in"
-                  type="submit"
-                >
-                  <input
-                    className="submit-button submit-button--disabled"
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    type="submit"
-                    value="sign in"
-                  />
-                </SubmitButton>
-              </div>
-            </form>
-          </div>
-        </div>
-      </Login>
-    </LoginContainer>
-  </Router>
-</BrowserRouter>
+    }
+  />
+</Router>
 `;
 
 exports[`LoginContainer render should NOT redirect if fetchLoginRequestStatus is rejected 1`] = `
-<BrowserRouter>
-  <Router
-    history={
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <LoginContainer
+    actions={
       Object {
-        "action": "POP",
-        "block": [Function],
-        "createHref": [Function],
-        "go": [Function],
-        "goBack": [Function],
-        "goForward": [Function],
-        "length": 1,
-        "listen": [Function],
-        "location": Object {
-          "hash": "",
-          "key": "cfquf1",
-          "pathname": "/policy",
-          "search": "",
-          "state": undefined,
-        },
-        "push": [Function],
-        "replace": [Function],
+        "fetchLogin": [MockFunction],
       }
     }
-  >
-    <LoginContainer
-      actions={
-        Object {
-          "fetchLogin": [MockFunction],
-        }
+    state={
+      Object {
+        "fetchLoginRequestStatus": "rejected",
       }
-      state={
-        Object {
-          "fetchLoginRequestStatus": "rejected",
-        }
-      }
-    >
-      <Login
-        loginStatus="rejected"
-        onLoginSubmit={[Function]}
-      >
-        <div
-          className="login__wrapper"
-        >
-          <div
-            className="login"
-          >
-            <div
-              className="login__title"
-            >
-              <Text
-                center={true}
-                color="black"
-                size="large"
-                text="sign in"
-                transform="capitalize"
-                weight="bold"
-              >
-                <div
-                  className="text text--size-large text--color-black text--transform-capitalize text--weight-bold text--center"
-                >
-                  <span>
-                    sign in
-                  </span>
-                </div>
-              </Text>
-            </div>
-            <form
-              onSubmit={[Function]}
-            >
-              <div
-                className="login__body"
-              >
-                <Input
-                  name="username"
-                  onChange={[Function]}
-                  placeholder="user name"
-                  type="text"
-                  value=""
-                >
-                  <div
-                    className="input"
-                  >
-                    <span
-                      className="input__header"
-                    >
-                      <Text
-                        center={false}
-                        color="black"
-                        size="medium"
-                        text="user name"
-                        transform="capitalize"
-                      >
-                        <div
-                          className="text text--size-medium text--color-black text--transform-capitalize"
-                        >
-                          <span>
-                            user name
-                          </span>
-                        </div>
-                      </Text>
-                    </span>
-                    <input
-                      className="input__body"
-                      name="username"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      placeholder="user name"
-                      type="text"
-                      value=""
-                    />
-                    <span
-                      className="input__underline"
-                    />
-                  </div>
-                </Input>
-                <div
-                  className="login__password"
-                >
-                  <Input
-                    name="password"
-                    onChange={[Function]}
-                    placeholder="password"
-                    type="password"
-                    value=""
-                  >
-                    <div
-                      className="input"
-                    >
-                      <span
-                        className="input__header"
-                      >
-                        <Text
-                          center={false}
-                          color="black"
-                          size="medium"
-                          text="password"
-                          transform="capitalize"
-                        >
-                          <div
-                            className="text text--size-medium text--color-black text--transform-capitalize"
-                          >
-                            <span>
-                              password
-                            </span>
-                          </div>
-                        </Text>
-                      </span>
-                      <input
-                        className="input__body"
-                        name="password"
-                        onBlur={[Function]}
-                        onChange={[Function]}
-                        onFocus={[Function]}
-                        placeholder="password"
-                        type="password"
-                        value=""
-                      />
-                      <span
-                        className="input__underline"
-                      />
-                    </div>
-                  </Input>
-                  <div
-                    className="login__password__icon"
-                  >
-                    <Icon
-                      color="grey"
-                      icon="closedEye"
-                      onClick={[Function]}
-                      size="medium"
-                    >
-                      <div
-                        className="icon icon--color-grey icon--size-medium icon--clickable"
-                        onClick={[Function]}
-                      >
-                        <i
-                          dangerouslySetInnerHTML={
-                            Object {
-                              "__html": Object {},
-                            }
-                          }
-                        />
-                      </div>
-                    </Icon>
-                  </div>
-                </div>
-              </div>
-              <div>
-                Oops! Wrong Username or Password
-              </div>
-              <div
-                className="login__controls"
-              >
-                <SubmitButton
-                  active={false}
-                  text="sign in"
-                  type="submit"
-                >
-                  <input
-                    className="submit-button submit-button--disabled"
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    type="submit"
-                    value="sign in"
-                  />
-                </SubmitButton>
-              </div>
-            </form>
-          </div>
-        </div>
-      </Login>
-    </LoginContainer>
-  </Router>
-</BrowserRouter>
+    }
+  />
+</Router>
 `;
 
 exports[`LoginContainer render should redirect if fetchLoginRequestStatus is success 1`] = `
-<BrowserRouter>
-  <Router
-    history={
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <LoginContainer
+    actions={
       Object {
-        "action": "REPLACE",
-        "block": [Function],
-        "createHref": [Function],
-        "go": [Function],
-        "goBack": [Function],
-        "goForward": [Function],
-        "length": 1,
-        "listen": [Function],
-        "location": Object {
-          "hash": "",
-          "key": "cfquf1",
-          "pathname": "/policy",
-          "search": "",
-          "state": undefined,
-        },
-        "push": [Function],
-        "replace": [Function],
+        "fetchLogin": [MockFunction],
       }
     }
-  >
-    <LoginContainer
-      actions={
-        Object {
-          "fetchLogin": [MockFunction],
-        }
+    state={
+      Object {
+        "fetchLoginRequestStatus": "success",
       }
-      state={
-        Object {
-          "fetchLoginRequestStatus": "success",
-        }
-      }
-    >
-      <Redirect
-        to="/policy"
-      >
-        <Lifecycle
-          onMount={[Function]}
-          onUpdate={[Function]}
-          to="/policy"
-        />
-      </Redirect>
-    </LoginContainer>
-  </Router>
-</BrowserRouter>
+    }
+  />
+</Router>
 `;
