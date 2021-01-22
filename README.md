@@ -39,7 +39,7 @@ React, React Hooks, React Router, Redux state management, JavaScript, APIs, Asyn
 As the app is built with React and the state is managed with Redux, I have split the logic between **Components** and **Containers**.
 </br>
 </br>
-The first category contains components with their contents and styles rendered on the page (e.g Text, Button, Input, Login components) and the second category contains components that communicate with Redux store (e.g. LoginContainer and Policy container).</br></br>
+The first category contains components with their contents and styles rendered on the page (e.g Text, Input, Login components) and the second category contains components that communicate with Redux store (e.g. LoginContainer and Policy container).</br></br>
 **State** contains logic related to Redux store.
 
 ### API calls and localStorage
@@ -69,5 +69,5 @@ In addition to current code of the app, I believe the following implementations 
 - Url: if the API provided URL for the photos of the insured car, it would be possible to render the images in the policy too.
 
 ### Time
-Approximate time for implementation and tests: 4 days.
+Approximate time for implementation and tests: 4-5 days.
 
